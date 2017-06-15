@@ -12,3 +12,8 @@ chanel_event_one = Event.create(name: 'Chanel Event One', topic: chanel)
 chanel_event_medium_one = EventMedium.create(url: 'https://s-media-cache-ak0.pinimg.com/736x/f9/57/f1/f957f1ed167de560fcadfc6a228e7f2e.jpg' ,caption: 'Chanel Logo', event: chanel_event_one)
 chanel_event_text_one = EventText.create(headline: 'Deauville', text: 'Gabrielle Chanel opens a new boutique in Deauville, France and introduces a collection of sportswear.', event: chanel_event_one)
 chanel_event_start_date_one = EventStartDate.create(year: 1913, event: chanel_event_one)
+
+chanel_event_two = Event.create(name: "Chanel Event Two", topic: chanel)
+chanel_event_medium_two = EventMedium.create(url: 'http://www.sandrascloset.com/wp-content/uploads/2015/11/coco_chanel_Biarritz2.jpg', caption: '1915 Chanel', event: chanel_event_two)
+chanel_event_text_two = EventText.create(headline: '1915 Chanel Clothing', text: 'This event happened in 1915', event: chanel_event_two)
+chanel_event_start_date_two = EventStartDate.create(year: 1915, event: chanel_event_two)

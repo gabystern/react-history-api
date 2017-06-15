@@ -4,7 +4,8 @@ module Api
 
       def index
         @topics = Topic.all
-        render json: @topics, include: 'event.event_medium, event.event_text', fields: { events: {event_medium: [:url, :caption], event_text: [:headline, :text] } }
+
+        render json: @topics, include: ['title_medium', 'title_text', 'events.event_medium', 'events.event_medium.url', 'events.event_medium.caption', 'events.event_text', 'events.event_text.headline', 'events.event_text.text']
       end
 
       def show
