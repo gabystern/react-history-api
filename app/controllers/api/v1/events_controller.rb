@@ -23,12 +23,6 @@ module Api
       def destroy
       end
 
-      private
-
-      def events_params
-        params.require(:event).permit(:name)
-      end
-
     end
   end
 end

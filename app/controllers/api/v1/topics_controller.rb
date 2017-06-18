@@ -11,12 +11,17 @@ module Api
       end
 
       def create
+        topic = Topic.create(topic_params)
+        render json: topic
       end
 
       def edit
       end
 
       def update
+        topic = Topic.find(params[:id])
+        topic.update(topic_params)
+        render json: topic
       end
 
       def destroy
@@ -27,8 +32,8 @@ module Api
 
       private
 
-      def topics_params
-        params.require(:topic).permit(:name)
+      def topic_params
+        params.require(:topic).permit(:name, :title_text_attributes => [:headline, :text], :title_medium_attributes => [:url, :caption], :events_attributes => [:event_medium_attributes => [:url, :caption], :event_text_attributes => [:headline, :text]])
       end
 
     end
