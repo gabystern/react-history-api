@@ -21,13 +21,13 @@ module Api
 
       def update
         topic = Topic.find(params[:id])
-        byebug
         topic.update(topic_params)
         render json: topic
       end
 
       def destroy
         topic = Topic.find(params[:id])
+        byebug
         topic.destroy
         render json: topic
       end
@@ -38,11 +38,12 @@ module Api
         params.require(:topic).permit(
         :id,
         :name,
-        :title_text_attributes => [:id, :headline, :text],
-        :title_medium_attributes => [:id, :url, :caption],
-        :events_attributes => [:event_medium_attributes => [:id, :url, :caption, :event_id],
-                              :event_text_attributes => [:id, :headline, :text, :event_id],
-                              :event_start_date_attributes => [:id, :year, :event_id]]
+        :_destroy,
+        :title_text_attributes => [:id, :headline, :text, :_destroy],
+        :title_medium_attributes => [:id, :url, :caption, :_destroy],
+        :events_attributes => [:event_medium_attributes => [:id, :url, :caption, :event_id, :_destroy],
+                              :event_text_attributes => [:id, :headline, :text, :event_id, :_destroy],
+                              :event_start_date_attributes => [:id, :year, :event_id, :_destroy]]
         )
 
       end
