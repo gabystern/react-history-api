@@ -34,6 +34,31 @@ chanel_event_medium_five = EventMedium.create(url: 'http://www.pursebop.com/wp-c
 chanel_event_text_five = EventText.create(headline: 'CHANEL N°5', text: 'Mademoiselle Chanel unveils her first fragrance, the iconic CHANEL N°5. Created by Ernest Beaux, former perfumer to the Tsars, N°5 is so called because it was the fifth scent presented to Mademoiselle Chanel. A truly timeless classic, N°5 remains the ultimate symbol of femininity.', event: chanel_event_five)
 chanel_event_start_date_five = EventStartDate.create(year: 1921, event: chanel_event_five)
 
+chanel_event_six = Event.create(name: "Chanel Event Six", topic: chanel)
+chanel_event_medium_six = EventMedium.create(url: 'http://acimg.auctivacommerce.com/imgdata/0/2/4/6/4/0/webimg/6789336.jpg', caption: 'Chanel N°22 Ad', event: chanel_event_six)
+chanel_event_text_six = EventText.create(headline: 'CHANEL N°22', text: 'CHANEL N°22 is launched. Named after the year of its creation, the floral fragrance is conceived in the same revolutionary spirit as CHANEL N°5, and distinguished by its unique blend of delicacy and audacity.', event: chanel_event_six)
+chanel_event_start_date_six = EventStartDate.create(year: 1922, event: chanel_event_six)
+
+chanel_event_seven = Event.create(name: "Chanel Event Seven", topic: chanel)
+chanel_event_medium_seven = EventMedium.create(url: 'http://coco-chanel-biography.weebly.com/uploads/2/6/7/4/26747328/878905_orig.jpg', caption: 'First Line of Chanel Makeup', event: chanel_event_seven)
+chanel_event_text_seven = EventText.create(headline: 'CREATION OF THE FIRST LINE OF MAKEUP', text: 'CHANEL presents its first makeup collection, featuring lip colors and face powders. In the same year, the “Société des Parfums CHANEL” is founded and is dedicated to creating unique fragrances and beauty products.', event: chanel_event_seven)
+chanel_event_start_date_seven = EventStartDate.create(year: 1924, event: chanel_event_seven)
+
+chanel_event_eight = Event.create(name: "Chanel Event Eight", topic: chanel)
+chanel_event_medium_eight = EventMedium.create(url: 'http://lachanelphile.com/wp-content/uploads/2010/09/letrainbleu2.jpg', caption: '1915 Chanel', event: chanel_event_eight)
+chanel_event_text_eight = EventText.create(headline: 'LE TRAIN BLEU', text: 'Gabrielle Chanel creates the costumes for the ballet “Le Train Bleu”, performed at the Théâtre des Champs-Élysées in Paris by Serge Diaghilev’s Ballets Russes. The libretto is by Jean Cocteau, the score by Darius Milhaud, the sets by Henri Laurens, and the stage curtain by Pablo Picasso.', event: chanel_event_eight)
+chanel_event_start_date_eight = EventStartDate.create(year: 1924, event: chanel_event_eight)
+
+chanel_event_nine = Event.create(name: "Chanel Event Nine", topic: chanel)
+chanel_event_medium_nine = EventMedium.create(url: 'https://nudeitandco.files.wordpress.com/2013/11/tweed-jackets.jpg', caption: '1915 Chanel', event: chanel_event_nine)
+chanel_event_text_nine = EventText.create(headline: 'TWEED', text: 'On her frequent trips to Scotland with the Duke of Westminster, Gabrielle Chanel discovers tweed, a traditionally masculine fabric which inspires her iconic women suits.', event: chanel_event_nine)
+chanel_event_start_date_nine = EventStartDate.create(year: 1924, event: chanel_event_nine)
+
+chanel_event_ten = Event.create(name: "Chanel Event Ten", topic: chanel)
+chanel_event_medium_ten = EventMedium.create(url: 'https://fashionstyleguru.files.wordpress.com/2012/07/blackdress01.jpg', caption: 'The Little Black Dress Sketches', event: chanel_event_ten)
+chanel_event_text_ten = EventText.create(headline: 'THE LITTLE BLACK DRESS', text: 'Gabrielle Chanel creates the iconic “little black dress,” a style whose daring simplicity revolutionizes fashion. American Vogue hails the innovative design as an instant classic, writing, “the CHANEL *Ford* dress, the frock that all the world will wear”.', event: chanel_event_ten)
+chanel_event_start_date_ten = EventStartDate.create(year: 1926, event: chanel_event_ten)
+
 # Prospect Park Seeding -------------------------------------------------------------
 
 prospect_park = Topic.create(name: 'Prospect Park')
