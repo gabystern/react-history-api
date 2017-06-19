@@ -21,12 +21,7 @@ module Api
 
       def update
         topic = Topic.find(params[:id])
-        # topic.title_text.update(topic_params['title_text_attributes'])
-        # topic.title_medium.update(topic_params['title_medium_attributes'])
-        # topic.update(topic_params)
         topic.update(topic_params)
-        # topic.save
-        byebug
         render json: topic
       end
 
